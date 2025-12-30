@@ -1,0 +1,21 @@
+<p>user-show works!</p>
+<table
+  
+  border="5"
+  align="center"
+  cellpadding="8"
+  cellspacing="0"
+>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let u of users | async">
+    <td>{{ u.id }}</td>
+    <td>{{ u.name }}</td>
+    <td>{{ u.username }}</td>
+    <td>{{ u.email }}</td>
+  </tr>
+</table>
